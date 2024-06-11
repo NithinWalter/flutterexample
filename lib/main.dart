@@ -15,8 +15,35 @@ class Homepage extends StatelessWidget {
      appBar:AppBar(
        title: Text("My new project"),
      ),
-      body: Container(
-        child: Text("An App",),color: Colors.orange,
+      body: Center(
+        child: Container(
+          height: 500,
+          color: Colors.deepPurpleAccent,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+                alignment: Alignment.center,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+                alignment: Alignment.center,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.black,
+                alignment: Alignment.center,
+              ),
+
+            ],
+          ),
+        )
       ),
     );
   }
